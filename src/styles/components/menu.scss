@@ -1,0 +1,37 @@
+.menu {
+	color: var(--rose-quartz);
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 60px;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 30px;
+
+		&.active {
+			font-weight: bold;
+		}
+		a {
+			text-decoration: none;
+			color: inherit;
+			transition: all 0.35s ease-in-out;
+		}
+	}
+
+	&__line {
+		position: absolute;
+		height: 4px;
+		transition: all 0.35s ease-in-out;
+		transform: translateX(-60px);
+		background: linear-gradient(
+			272.48deg,
+			#f3a854 0%,
+			#f3804e 43.13%,
+			rgba(255, 106, 104, 0.95) 69.53%,
+			#eb40a6 98.8%
+		);
+		border-radius: 20px;
+	}
+}

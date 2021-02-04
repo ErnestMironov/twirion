@@ -1,6 +1,17 @@
 header.header
-    .logo.header__logo
-        picture
-            source(srcset="images/logo.webp", type="image/webp")
-            img(src="images/logo.png", alt="alt")
-        span.logo__label TWIRION
+    .container
+        .logo.header__logo
+            picture
+                source(srcset="images/logo.webp", type="image/webp")
+                img(src="images/logo.png", alt="alt")
+            span.logo__label TWIRION
+        .header__nav 
+            nav.menu
+                ul.menu__list
+                    li.menu__item.active
+                        a(href="javascript:;") Услуги
+                    li.menu__item
+                        a(href="javascript:;") Портфолио
+                    li.menu__item
+                        a(href="javascript:;") Контакты
+                .menu__line
