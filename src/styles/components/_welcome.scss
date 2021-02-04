@@ -1,0 +1,46 @@
+.welcome {
+	position: relative;
+
+	padding-bottom: 120px;
+
+	color: var(--white);
+	&__bg {
+		position: absolute;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+	}
+	&__cloud {
+		position: absolute;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+	}
+	&__txt {
+		margin-right: 20px;
+	}
+	&__title {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 45px;
+	}
+	&__desc {
+		font-size: 24px;
+		font-weight: normal;
+		line-height: 30px;
+
+		margin-top: 30px;
+	}
+	&__wrap {
+		display: flex;
+
+		margin-top: 182px;
+	}
+	&__callback {
+		margin-top: 60px;
+	}
+}

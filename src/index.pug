@@ -4,5 +4,15 @@ html(lang="ru")
     body 
         .welcome
             img(src="images/gradient-bg.svg", alt="alt").welcome__bg
+            img(src="images/cloud.svg", alt="alt").welcome__cloud
             include pug/blocks/header
+            .container.welcome__wrap 
+                .welcome__txt
+                    h1.welcome__title Добро пожаловать в мир безграничных возможностей в сфере веб разработки. 
+                    .welcome__desc Мы разробатываем уникальные сайты, которые помогают Вам развивать бизнес и выделиться среди конкурентов
+                    button.btn.welcome__callback Оставить заявку
+                picture.welcome__rocket
+                    source(srcset="images/rocket.webp", type="image/webp")
+                    img(src="images/rocket.png", alt="alt") 
+        include pug/blocks/services
         include pug/blocks/footer

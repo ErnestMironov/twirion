@@ -1,0 +1,15 @@
+.services {
+	margin-top: 30px;
+	&__title {
+		display: block;
+
+		text-align: center;
+	}
+	&__list {
+		display: grid;
+
+		margin-top: 70px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 63px 33px;
+	}
+}

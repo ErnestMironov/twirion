@@ -1,0 +1,23 @@
+@import '@activeTheme/variables.css';
+@import '@activeTheme/deviceWidths.css';
+
+.title {
+    display: flex;
+    margin-top: $sectionMargin;
+    margin-bottom: $sectionMargin;
+
+    @media (max-width: $pageTabletWidth) {
+        padding: 0 $sectionMargin;
+    }
+}
+
+.remarketingBreadcrumbs {
+    margin-top: $contentSpacing;
+}
+
+.remarketingTop {
+    margin: $contentSpacing 0;
+    @media (max-width: $pageTabletWidth) {
+        padding: 0 $sectionMargin;
+    }
+}
