@@ -1,0 +1,54 @@
+.about-us {
+	margin-top: 108px;
+
+	color: var(--white);
+	&__why {
+		position: relative;
+		z-index: 1;
+
+		width: 1362px;
+		max-width: calc(100% - 60px);
+		margin: auto;
+		padding: 60px 0;
+
+		border-radius: 30px;
+		background: var(--gradient-1-70p);
+	}
+	&__digital-list {
+		display: grid;
+
+		margin-top: 52px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+	&__digital-item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__digital-title {
+		font-size: 36px;
+		line-height: 45px;
+
+		letter-spacing: 0.01em;
+
+		@include container {
+			font-size: 30px;
+			line-height: normal;
+		}
+	}
+	&__digital-number {
+		font-size: 72px;
+		font-weight: bold;
+		line-height: 91px;
+
+		margin-top: 22px;
+
+		letter-spacing: 0.01em;
+	}
+	&__how {
+		margin-top: -180px;
+		padding-top: 250px;
+
+		background: var(--dark-gradient);
+	}
+}
