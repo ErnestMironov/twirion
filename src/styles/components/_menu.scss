@@ -3,28 +3,31 @@
 	&__list {
 		display: flex;
 	}
-
 	&__item {
-		margin-right: 60px;
-		font-weight: 300;
 		font-size: 24px;
+		font-weight: 300;
 		line-height: 30px;
 
+		margin-right: 60px;
 		&.active {
 			font-weight: bold;
 		}
 		a {
-			text-decoration: none;
-			color: inherit;
 			transition: all 0.35s ease-in-out;
+			text-decoration: none;
+
+			color: inherit;
 		}
 	}
-
 	&__line {
 		position: absolute;
+
 		height: 4px;
-		transition: all 0.35s ease-in-out;
+
+		transition: all 0.25s ease-in-out;
 		transform: translateX(-60px);
+
+		border-radius: 20px;
 		background: linear-gradient(
 			272.48deg,
 			#f3a854 0%,
@@ -32,6 +35,5 @@
 			rgba(255, 106, 104, 0.95) 69.53%,
 			#eb40a6 98.8%
 		);
-		border-radius: 20px;
 	}
 }
