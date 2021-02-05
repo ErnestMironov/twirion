@@ -8,7 +8,7 @@
 	color: var(--white);
 	&__bg {
 		position: absolute;
-		z-index: -3;
+		z-index: -2;
 		bottom: 0;
 		left: 0;
 
@@ -50,13 +50,13 @@
 		margin-top: 60px;
 	}
 	&__rocket {
-		animation: rocket 0.11s ease infinite;
+		// animation: rocket 0.11s ease infinite;
 	}
 	&__stars {
 		position: absolute;
-		z-index: -2;
+		z-index: -3;
+		top: 0;
 		right: 0;
-		bottom: 0;
 	}
 }
 
