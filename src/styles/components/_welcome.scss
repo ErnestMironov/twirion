@@ -6,7 +6,7 @@
 	padding-bottom: 120px;
 
 	color: var(--white);
-	&__bg {
+	&__bg, &__gradient {
 		position: absolute;
 		z-index: -2;
 		bottom: 0;
@@ -16,10 +16,15 @@
 		min-width: 100%;
 		min-height: 100%;
 	}
+
+	&__bg {
+		z-index: -4;
+		background: rgb(27,20,54);
+	}
 	&__cloud {
 		position: absolute;
 		z-index: -1;
-		bottom: 0;
+		bottom: -1px;
 		left: 0;
 
 		width: 100%;

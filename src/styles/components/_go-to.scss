@@ -1,4 +1,6 @@
 .go-to {
+	position: relative;
+
 	display: flex;
 	overflow: hidden;
 	align-items: center;
@@ -8,6 +10,7 @@
 	padding: 13px;
 
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+	text-decoration: none;
 
 	color: var(--white);
 	border: none;
@@ -28,6 +31,9 @@
 	&:hover {
 		max-width: 999px;
 		padding: 13px 34px;
+		& .go-to__txt {
+			opacity: 1;
+		}
 		img {
 			right: 34px;
 		}
