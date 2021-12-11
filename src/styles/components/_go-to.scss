@@ -1,7 +1,7 @@
 .go-to {
 	position: relative;
 
-	display: flex;
+	display: inline-flex;
 	overflow: hidden;
 	align-items: center;
 
@@ -62,5 +62,30 @@
 		margin-right: 5px;
 
 		opacity: 0;
+	}
+	// Модификатор
+	&_l {
+		max-width: 82px;
+		height: 82px;
+		.go-to {
+			&__txt {
+				font-size: 24px;
+				line-height: 30px;
+
+				letter-spacing: 0.01em;
+			}
+		}
+		&::after {
+			width: 50px;
+			height: 50px;
+		}
+		img {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+
+			width: 50px;
+			height: 50px;
+		}
 	}
 }

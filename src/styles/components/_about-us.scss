@@ -55,12 +55,15 @@
 		letter-spacing: 0.01em;
 	}
 	&__how {
-		padding-bottom: 200px;
+		padding-bottom: 88px;
 
-		background: var(--dark-gradient);
+		background: var(--purple);
 	}
 	&__road {
+		display: block;
+
 		max-width: 100%;
+		margin: auto;
 		margin-top: 40px;
 	}
 }

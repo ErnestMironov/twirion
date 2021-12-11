@@ -1,0 +1,39 @@
+.reviews {
+	margin-top: 73px;
+	.tab-container {
+		margin-top: 60px;
+	}
+	.tab-panes {
+		margin-top: 50px;
+	}
+	&__slide {
+		width: 505px;
+		min-height: 379px;
+
+		background-color: lightgrey;
+	}
+	&__navigation {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 50px;
+	}
+	&__nav-btn {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 75px;
+		height: 75px;
+
+		cursor: pointer;
+
+		border-radius: 50%;
+		background: var(--gradient-1-70p);
+		box-shadow: -4px -4px 16px rgba(31, 32, 65, 0.1),
+			4px 4px 16px rgba(31, 32, 65, 0.1);
+		&_prev {
+			margin-right: 100px;
+		}
+	}
+}

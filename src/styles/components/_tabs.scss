@@ -1,0 +1,45 @@
+.tab-pane {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.tab {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
+
+	padding: 4px;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: var(--dark-blue);
+	border-radius: 30px;
+	background: var(--gradient-1-30p);
+	&.active {
+		div {
+			color: var(--white);
+			background: transparent;
+		}
+	}
+	div {
+		display: block;
+
+		width: 100%;
+		height: 100%;
+		padding: 15px 40px;
+
+		transition: cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+
+		border-radius: 27px;
+		background: var(--white);
+	}
+}
